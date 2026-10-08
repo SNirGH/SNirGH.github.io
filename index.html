@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <title>Sharon Nir — Freelance Video Editor Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            border-left: 4px solid var(--accent);
+            padding-left: 12px;
+            font-weight: 600;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+
+        .video-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            /* 16:9 Aspect Ratio */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-info {
+            padding: 18px;
+        }
+
+        .video-info h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .video-info p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .contact-box {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .contact-box h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-box p {
+            color: var(--text-muted);
+            margin-bottom: 25px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .btn-primary:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0 40px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <span class="hire-badge">🔥 Available for Hire</span>
+            <h1>Hi, I'm <span class="highlight">Sharon Nir</span></h1>
+            <p class="subtitle">Freelance Video Editor specializing in high-retention YouTube content, fast pacing, and
+                engaging storytelling.</p>
+
+            <div class="badges">
+                <span class="badge">DaVinci Resolve</span>
+                <span class="badge">Blender</span>
+                <span class="badge">Substance 3D Painter</span>
+                <span class="badge">Photoshop</span>
+                <span class="badge">Affinity Suite</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn primary">View My Work</a>
+                <a href="#contact" class="btn secondary">Let's Talk</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" id="portfolio">
+        <h2 class="section-title">Featured Work</h2>
+        <p class="section-desc">Click to watch samples showcasing pacing, motion graphics, and narrative structure.</p>
+        <div class="portfolio-grid">
+
+            <!-- Video Item 1 -->
+
+            <div class="video-card">
+                <div class="video-container">
+                    <!-- Replace the embed URL with your YouTube video ID -->
+                    <iframe src="https://www.youtube.com/embed/JSOSP7VmeDY"
+                        title="YouTube Video Editor Showcase | Sharon Nir" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>YouTube Video Editor Showcase | Sharon Nir</h3>
+                    <span class="tag">Portfolio Showcase</span>
+                    <p>Green Screen Footage, Multi-style fast-cut montage, and Sound design</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-container">
+                    <!-- Replace the embed URL with your YouTube video ID -->
+                    <iframe src="https://www.youtube.com/embed/_S9g16jQdyY" title="Lutnick&#39;s Whistleblower Died..."
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Lutnick's Whistleblower Died...</h3>
+                    <span class="tag">Commentary Essay</span>
+                    <p>Fact-based narrative, source integration, news clips curation, and personal analysis</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-container">
+                    <!-- Replace the embed URL with your YouTube video ID -->
+                    <iframe width="942" height="538" src="https://www.youtube.com/embed/cItyUq-DZTc"
+                        title="I Made a iPhone 18 Ad | Blender" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>I Made a iPhone 18 Ad | Blender</h3>
+                    <span class="tag">3D Motion Design & Editing</span>
+                    <p>3D Product Modeling and Rendering, Smooth Transitions, and Animation</p>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="contact-box">
+            <h2>Let's Elevate Your Channel</h2>
+            <p>I'm currently taking on new clients. Drop me an email or message me on Twitter/Discord to discuss your
+                next video.</p>
+            <div class="contact-links">
+                <a href="mailto:snir.zero@proton.me" class="contact-btn"><i class="fa-solid fa-envelope"></i> Email
+                    Me</a>
+                <a href="https://x.com/SilverSylphYT" target="_blank" class="contact-btn"><i
+                        class="fa-brands fa-twitter"></i> Twitter / X</a>
+                <a href="https://discord.com/users/silversylphyt" target="_blank" class="contact-btn"><i
+                        class="fa-brands fa-discord"></i> Discord: @silversylphyt</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sharon Nir. Silver Sylph</p>
+    </footer>
+
+</body>
+
+</html>
